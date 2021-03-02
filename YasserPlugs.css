@@ -1,0 +1,418 @@
+*{
+    box-sizing: border-box;
+    direction: rtl;
+
+}
+@font-face {
+    font-family: myFont;
+    src: url("XB Yas.ttf");
+}
+body{
+    font-family: myFont;
+    background-color: white;
+    font-size: 4vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+header{
+    position: sticky;
+    top: -8vw;
+    height: 14vw;
+    background-image: linear-gradient(270deg,whitesmoke, lightgray);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    z-index: 10;
+}
+header span{
+    padding: 0;
+    margin: 0;
+}
+header i{
+    color: red;
+    padding: 0;
+    margin: .5vw;
+    width: 2vw;
+
+}
+header i:hover{
+    font-size: 3.4vw;
+    cursor: pointer;
+}
+header p{
+    margin: 0;
+    font-size: 1.5vw;
+}
+header > .center{
+    margin: 0 auto;
+}
+
+header p:hover{
+    text-shadow: 0 0 1px gray ;
+}
+.center{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.space-between{
+    display: flex;
+    height: 5vw;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    direction: ltr;
+    padding: 0 3vw;
+}
+.h0{
+    position: relative;
+}
+.col{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: center;
+
+}
+#carousel{
+    padding: 0;
+    margin: 1vw;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+#carousel>div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+#carousel .pic-items{
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+#carousel .pic-item{
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    left: 110%;
+}
+#carousel img{
+    margin: 0;
+    width: 100%;
+    height: auto;
+
+}
+.h0>img{
+    position: absolute;
+    top: -5vw;
+    height: 10vw;
+    width: 20vw;
+    margin-left: -10vw;
+    left: 50%;
+}
+#carousel p{
+    padding: 1vw;
+    margin: 1vw 0px;
+    text-shadow: 0 0 2px whitesmoke;
+}
+.elem-items .material-icons{
+    font-size: 2vw;
+}
+header .material-icons{
+    font-size: 3vw;
+}
+#carousel .elem-items{bottom: 2vw;}
+#carousel .elem-items{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    opacity: 1;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-flow: row nowrap;
+}
+#iLeftArrow , #iRightArrow{
+    font-size: 34px;
+}
+#carousel .iCircle{
+    font-size: 18px;
+    padding-top: 20px;
+}
+.elem-items p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#products{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+#prod-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+#prodContent{
+    display: none;
+    width: 100%;
+}
+.kind-cart{
+    flex-grow: 1 ;
+    flex-shrink: 1;
+
+    margin: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#main-title{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 60%;
+    height: 6vw;
+    justify-content: stretch;
+    align-items: center;
+    border-bottom: 2px red solid;
+    color: black;
+    margin: 10px;
+    font-size: 1em;
+}
+#main-title h1:nth-child(1){
+    width: 50px;
+    flex-grow: 0;
+    text-align: center;
+    font-size: 3vw;
+}
+#main-title h1:nth-child(2){
+    flex-grow: 1;
+    text-align: center;
+    font-size: 4vw;
+}
+#prod-title{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#prod-info{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 0 0 0 20px;
+    flex-basis: 500px;
+    flex-grow: 1;
+}
+#toolbar{
+    position: sticky;
+    top: 6vw;
+    padding: 0 3vw;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    background-image: linear-gradient(270deg,whitesmoke,lightgray);
+}
+#pageLink{
+    padding: 0;
+    margin: 0;
+}
+#toolbar img{
+    height: 3vw;
+    width: auto;
+}
+#prod-gallery{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    flex-basis: 500px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 10px;
+    font-size: 50px;
+    align-items: center;
+}
+#main-gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-grow: 0;
+}
+#gallery-left-btn , #gallery-right-btn{
+    width: 50px;
+    /*background-color: whitesmoke;*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#gallery-right-btn:hover i, #gallery-left-btn:hover i{
+    font-size: 35px;
+}
+#gallery-right-btn:hover, #gallery-left-btn:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+#gallery-main-pic{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-content: space-between;
+}
+#gallery-main-pic img{
+    max-width: 400px;
+    max-height: 200px;
+}
+#gallery-counter{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+#select-gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    flex-grow: 1;
+    margin: 10px ;
+}
+#select-gallery > div{
+    width: 25%;
+    display: flex;
+    flex-flow: row nowrap;
+    flex-shrink: 1;
+    justify-content: center;
+    align-content: space-around;
+
+}
+#select-gallery img{
+    max-height: 70px;
+    max-width: 100px;
+    width: auto;
+    cursor: pointer;
+}
+.kind-cart:hover{
+   box-shadow: 0 0 1vw black;
+}
+.kind-cart:hover h4{
+    border-top: .2vw brown solid;
+}
+.kind-cart *{
+    margin: 0;
+}
+.kind-cart h4{
+    border-top:.2vw red solid;
+}
+footer{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+.toolbar-item{
+    padding: 10px 20px;
+    border-right: 5px darkgray solid;
+    margin: 0 10px;
+}
+@media screen and (max-device-width: 576px) {
+    .kind-cart{
+        flex-basis: 80vw;
+        padding: 2vw;
+    }
+    .kind-cart img{
+        max-width: 70vw;
+        max-height: 40vw;
+        align-self: center;
+    }
+}
+@media screen and (min-device-width: 576px) {
+    .kind-cart{
+        flex-basis: 40vw;
+        padding: .7vw;
+    }
+    .kind-cart img{
+        max-width: 36vw;
+        max-width: 25vw;
+        align-self: center;
+    }
+    #prod-info{flex-basis: 90vw;}
+    /*#prod-gallery{flex-basis: 90vw;}*/
+    #prod-content{font-size: 4vw;}
+}
+@media screen and (min-device-width: 786px) {
+    header i{
+        color: red;
+        padding: 0;
+        margin: .5vw;
+        width: 4vw;
+        font-size: 3vw;
+
+    }
+    header i:hover{
+        font-size: 4.6vw;
+        cursor: pointer;
+    }
+    header p{
+        margin: 0;
+        font-size: 1.4vw;
+    }
+    #prod-info{flex-basis: 45vw;}
+    /*#prod-gallery{flex-basis: 45vw;}*/
+    #prod-content{font-size: 3vw;}
+}
+@media screen and (min-device-width: 992px) {
+    .kind-cart{
+        flex-basis: 12vw;
+        padding: 1vw;
+    }
+    .kind-cart img{
+        max-width: 8vw;
+        max-height: 5.5vw;
+        align-self: center;
+    }
+    header i{
+        color: red;
+        padding: 0;
+        margin: .5vw;
+        width: 2vw;
+
+    }
+    header i:hover{
+        font-size: 3.4vw;
+        cursor: pointer;
+    }
+    header p{
+        margin: 0;
+        font-size: 1.5vw;
+    }
+    #prod-info{flex-basis: 45vw;}
+    /*#prod-gallery{flex-basis: 45vw;}*/
+    #prod-content{font-size: 2vw;}
+}
+@media screen and (min-device-width: 1200px) {
+
+}
+
+
